@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="547.523" height="145" viewBox="0 0 547.523 145">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_3" data-name="Path 3" d="M0,0H73V259.019L0,220.286Z" transform="translate(1412.523 211.735) rotate(90)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-851 -438)">
+    <text id="LILLY" transform="translate(851 556)" fill="#fff" font-size="100" font-family="Nauman-HeavyItalic, Nauman" font-weight="800" font-style="italic"><tspan x="0" y="0">LILLY</tspan></text>
+    <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-14 272)" clip-path="url(#clip-path)">
+      <text id="TAX" transform="translate(1166 284)" fill="#fff" font-size="100" font-family="Nauman-HeavyItalic, Nauman" font-weight="800" font-style="italic"><tspan x="0" y="0">TAX</tspan></text>
+    </g>
+  </g>
+</svg>
