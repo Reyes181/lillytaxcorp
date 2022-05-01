@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/lillytaxcorp/static/css/main.4250f973.css",
+    "main.js": "/lillytaxcorp/static/js/main.babeae70.js",
+    "static/js/787.539437f3.chunk.js": "/lillytaxcorp/static/js/787.539437f3.chunk.js",
+    "static/media/scott-graham-unsplash.jpg": "/lillytaxcorp/static/media/scott-graham-unsplash.adc9dbe6481c20081ecc.jpg",
+    "static/media/kaitlyn-baker-unsplash.jpg": "/lillytaxcorp/static/media/kaitlyn-baker-unsplash.87344812a21e0cb53842.jpg",
+    "static/media/kelly-sikkema-unsplash.jpg": "/lillytaxcorp/static/media/kelly-sikkema-unsplash.d58c160395fca04c8653.jpg",
+    "static/media/Blur.jpg": "/lillytaxcorp/static/media/Blur.e01c6f81076ce35d338f.jpg",
+    "static/media/Hero_Img.png": "/lillytaxcorp/static/media/Hero_Img.280d235a41e0fabab3ed.png",
+    "static/media/Ribbon.png": "/lillytaxcorp/static/media/Ribbon.e842f8e434f4956ea8f0.png",
+    "static/media/handshakeCirle.png": "/lillytaxcorp/static/media/handshakeCirle.39bd868966aee4deb8be.png",
+    "static/media/Nauman-HeavyItalic.otf": "/lillytaxcorp/static/media/Nauman-HeavyItalic.6c3c36f1ec8459ff4a3c.otf",
+    "static/media/ManMoney.png": "/lillytaxcorp/static/media/ManMoney.dbad41707632c13cc51f.png",
+    "static/media/Caution Tape-big.png": "/lillytaxcorp/static/media/Caution Tape-big.b3785004038d19f287a1.png",
+    "static/media/itin.png": "/lillytaxcorp/static/media/itin.bd1790ad52c0d68e6dc1.png",
+    "static/media/Bank.png": "/lillytaxcorp/static/media/Bank.08583b1b5879750a96f9.png",
+    "static/media/slick.svg": "/lillytaxcorp/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/lillytaxcorp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/lillytaxcorp/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/lillytaxcorp/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/lillytaxcorp/index.html",
+    "main.4250f973.css.map": "/lillytaxcorp/static/css/main.4250f973.css.map",
+    "main.babeae70.js.map": "/lillytaxcorp/static/js/main.babeae70.js.map",
+    "787.539437f3.chunk.js.map": "/lillytaxcorp/static/js/787.539437f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4250f973.css",
+    "static/js/main.babeae70.js"
+  ]
+}
