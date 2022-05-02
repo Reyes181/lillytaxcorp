@@ -6,12 +6,13 @@ import EnglishFlag from '../../resources/images/english.png';
 import SpanishFlag from '../../resources/images/spanish.png';
 import Toolbar from '@mui/material/Toolbar';
 import MenuIcon from '@mui/icons-material/Menu';
-import {HeaderLogoBox, HeaderLogo, HeaderContainer, HeaderContent, HeaderLanguage, HeaderNav, MobileBurger} from '../../styles/header.styles'
+import {HeaderBar, HeaderLogoBox, HeaderLogo, HeaderContainer, HeaderContent, HeaderLanguage, HeaderNav, MobileBurger} from '../../styles/header.styles'
 
 
 const Header = ({drawerToggleHandler}) => {
     return (
         <Box sx={{flexGrow: 1}}>
+            <HeaderBar>
             <AppBar
                 position='fixed'
                 style={{
@@ -64,6 +65,7 @@ const Header = ({drawerToggleHandler}) => {
                 </HeaderContainer>
                 
             </AppBar>
+            </HeaderBar>
         </Box>
     )
 }

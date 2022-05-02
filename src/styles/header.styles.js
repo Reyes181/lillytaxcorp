@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const HeaderBar = styled.div`
+    @media screen and (max-width: 600px) {
+        header {
+            background-color: #00274c !important;
+            box-shadow: none !important;
+        }
+    } 
+`;
+
 export const HeaderContainer = styled.div`
     width: 60%;
     margin:  0 auto;

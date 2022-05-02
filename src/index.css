@@ -28,12 +28,12 @@ code {
   flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
       background-color: #00274c !important;
       box-shadow: none !important;
     }
-}
+} */
 
 .slick-slider {
   height: 90%;
