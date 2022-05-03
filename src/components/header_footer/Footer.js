@@ -12,7 +12,7 @@ const Footer = () => {
                 <div>
                     <span>Tax Services</span>
                     <ul>
-                        <li><Link to='/taxfiling'>Tax Filing</Link></li>
+                        <li><Link to='/taxfiling/documentchecklist'>Document Checklist</Link></li>
                         <li><Link to='/taxfiling/in-person-preparation'>In-Person Filing</Link></li>
                         <li><Link to='/taxfiling/dropoff-preparation'>Drop-off Filing</Link></li>
                         <li><Link to='/taxfiling/virtual-preparation'>Virtual Filing</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
             </FooterCopyRight>
 
             <FooterBottom>
-                <div>Established 2004</div>
+                <div>Established 2011</div>
             </FooterBottom>
         </FooterContainer>
     )

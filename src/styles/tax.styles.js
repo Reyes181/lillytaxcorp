@@ -440,6 +440,16 @@ export const ReuseContainer = styled.div`
     width: 100%;
     background: rgb(17,41,96);
     background: radial-gradient(circle, rgba(17,41,96,1) 17%, rgba(0,39,76,1) 77%);
+
+    @media screen and (max-width: 1023px) {
+        height: 30vh;
+        margin-top: 5vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 60vh;
+        margin-top: 0;
+    }
 `;
 
 export const ReuseContent = styled.div`
@@ -449,11 +459,15 @@ export const ReuseContent = styled.div`
     align-items: flex-end;
     justify-content: center;
 
+    @media screen and (max-width: 1023px) {
+        width: 80%;
+        align-items: center;
+    }
+
     @media screen and (max-width: 600px){
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-end;
-        width: 80%;
         height: 70%;
     }
 `;
@@ -482,11 +496,26 @@ export const ReuseLeft = styled.div`
         line-height: 30px;
     }
 
+    @media screen and (max-width: 1023px) {
+        height: 90%;
+
+        div:nth-child(1){
+            width: 100%;
+        }
+    
+        div:nth-child(2){
+            width: 100%;
+            margin-top: 3vh;
+            line-height: 30px;
+        }
+    }
+
     @media screen and (max-width: 600px){
         flex-basis: 60%;
         width: 100%;
         align-items: center;
         text-align: center;
+        height: 80%;
 
         div:nth-child(1){
             width: 100%;
@@ -512,6 +541,12 @@ export const ReuseRight = styled.div`
     svg {
         color: #fff;
         font-size: 250px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        svg {
+            font-size: 200px;
+        }
     }
 
     @media screen and (max-width: 600px){
@@ -540,10 +575,17 @@ export const InPersonMain = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 1023px){
+        height: auto;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
     @media screen and (max-width: 600px){
         height: 150vh;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
 `;
 
@@ -559,8 +601,20 @@ export const InPersonLeft = styled.div`
         width: 80%;
     }
 
+    @media screen and (max-width: 1023px){
+        height: auto;
+        margin: 11vh 0 0 0;
+        justify-content: flex-end;
+
+        img {
+            width: 90%;
+        }
+    }
+
     @media screen and (max-width: 600px){
         flex-basis: 20%;
+        justify-content: center;
+        margin: 0;
 
         img {
             width: 90%;
@@ -580,10 +634,16 @@ export const InPersonRight = styled.div`
         width: 100%;
     }
 
+    @media screen and (max-width: 1023px){
+        height: auto;
+        margin: 5vh 0 0 0;
+    }
+
     @media screen and (max-width: 600px){
         flex-basis: 75%;
         width: 90%;
         justify-content: space-evenly;
+        margin: 0;
     }
 `;
 
@@ -600,6 +660,12 @@ export const InPersonBadge = styled.div`
     font-family: 'Roboto';
     font-size: 0.775vw;
 
+    @media screen and (max-width: 1023px){
+        width: 50%;
+        height: 3vh;
+        font-size: 1vw;
+    }
+
     @media screen and (max-width: 600px){
         width: 100%;
         height: 8vh;
@@ -615,8 +681,12 @@ export const InPersonTitle = styled.div`
     color: #0c0c0c;
     margin: 0 0 2vh 0;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 1023px){
         width: 100%;
+        margin: 1vh 0 2vh 0;
+    }
+
+    @media screen and (max-width: 600px){
         font-size: 9.5vw;
         margin: 0;
     }
@@ -628,6 +698,12 @@ export const InPersonContent = styled.div`
     font-weight: 300;
     font-size: 1.25vw;
     line-height: 30px;
+
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        font-size: 2vw;
+        line-height: 40px;
+    }
 
     @media screen and (max-width: 600px){
         width: 100%;
@@ -656,6 +732,11 @@ export const InPersonCheckList = styled.ul`
         }
     }
 
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        font-size: 2vw;
+    }
+
     @media screen and (max-width: 600px){
         width: 100%;
         font-size: 5vw;
@@ -670,11 +751,15 @@ export const WaysToFileContainer = styled.div`
     align-items: center;
     margin: 10vh auto;
 
+    @media screen and (max-width: 1023px){
+        width: 90%;
+        height: 60vh;
+    }
+
     @media screen and (max-width: 600px){
         height: 200vh;
         margin: 5vh auto 5vh auto;
         flex-direction: column;
-        width: 90%;
     }
 `;
 
@@ -694,6 +779,14 @@ export const WaysToFileLeft = styled.div`
 
         li {
             width: 100% !important;
+        }
+    }
+
+    @media screen and (max-width: 1023px){
+        flex-basis: 50%;
+
+        hr {
+            margin: 2vh 40% 2vh 0;
         }
     }
 
@@ -723,6 +816,12 @@ export const WaysToFileBadge = styled.div`
     font-family: 'Roboto';
     font-size: 0.775vw;
 
+    @media screen and (max-width: 1023px){
+        width: 50%;
+        height: 3vh;
+        font-size: 1vw;
+    }
+
     @media screen and (max-width: 600px){
         width: 100%;
         height: 8vh;
@@ -743,6 +842,8 @@ export const WaysToFileTitle = styled.div`
         color: rgb(255, 203, 5);
     }
 
+    
+
     @media screen and (max-width: 600px){
         width: 100%;
         font-size: 9.5vw;
@@ -757,9 +858,15 @@ export const WaysToFileDesc = styled.div`
     line-height: 30px;
     margin: 2.5vh 0;
 
+    @media screen and (max-width: 1023px){
+        font-size: 2vw;
+        margin: 1vh 0;
+    }
+
     @media screen and (max-width: 600px){
         width: 100%;
         font-size: 5vw;
+        line-height: 40px;
     }
 `;
 
@@ -769,8 +876,11 @@ export const WaysToFileRight = styled.div`
     flex-direction: column;
     height: 90%;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 1023px){
         flex-basis: 50%;
+    }
+
+    @media screen and (max-width: 600px){
         width: 100%;
     }
 `;
@@ -803,6 +913,10 @@ export const WaysToFileNavContent = styled(Link)`
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
+    @media screen and (max-width: 1023px){
+        flex-basis: 65%;
+    }
+
     @media screen and (max-width: 600px){
         flex-basis: 100%;
     }
@@ -819,6 +933,11 @@ export const WaysToFileNavName = styled.div`
     font-weight: 700;
     font-size: 1.5vw;
     color: #00274c;
+
+    @media screen and (max-width: 1023px){
+        font-size: 2vw;
+        width: 90%;
+    }
 
     @media screen and (max-width: 600px){
         font-size: 6vw;
@@ -848,3 +967,241 @@ export const WaysToFileNavIcon = styled.div`
     }
 `;
 
+export const DocumentCheckListContainer = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0 0 0;
+`;
+
+export const DocumentCheckListBanner = styled.div`
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 1023px) {
+        height: 40vh;
+    }
+    
+    @media screen and (max-width: 600px) {
+        height: auto;
+    }
+`;
+
+export const DLBannerContent = styled.div`
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Roboto';
+
+    @media screen and (max-width: 1023px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 90%;
+        align-items: center;
+        margin: 10vh 0;
+    }
+`;
+
+export const DLBannerTitle = styled.div`
+    font-weight: 500;
+    font-size: 2.5vw;
+    width: 100%;
+    text-align: left;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 7vw;
+    }
+`;
+
+export const DLBannerBorder = styled.div`
+    margin: 2vh 0;
+    width: 10%;
+    border-bottom: 3px solid #00274c;
+    display: flex;
+    justify-self: flex-start;
+
+    @media screen and (max-width: 1023px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 40%;
+    }
+`;
+
+export const DLBannerDesc = styled.div`
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    width: 90%;
+    font-size: 1.25vw;
+    
+    span {
+        margin: 1vh 0;
+    }
+
+    @media screen and (max-width: 1023px) {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        text-align: justify;
+        font-size: 5vw;
+    }
+`;
+
+export const DLInfoContainer = styled.div`
+    height: auto;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+`;
+
+export const DLPersonalContent = styled.div`
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 2vh auto;
+    align-items: center;
+
+    @media screen and (max-width: 1023px) {
+        width: 90%;
+    }
+`;
+
+export const DLPeronsalIcon = styled.div`
+    width: 40%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(255, 203, 5);
+    margin-top: 2vh;
+
+    svg {
+        #00274c;
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        svg {
+            font-size: 80px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 20vh;
+        width: 50%;
+    }
+`;
+
+export const DLPerosnalTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.05vw;
+    font-weight: 500;
+    color: #5f5e5e;
+    
+    span:nth-child(1){
+        font-weight: 300;
+        font-size: 1.75vw;
+        margin: 0 0 5vh 0;
+        color: #0c0c0c;
+        margin-bottom: 2vh;
+    }
+
+    @media screen and (max-width: 1023px) {
+        font-size: 2vw;
+
+        span:nth-child(1){
+            font-size: 2.5vw;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 5vw;
+        line-height: 40px;
+
+        span:nth-child(1){
+            font-size: 5.75vw;
+            line-height: normal;
+        }
+    }
+`;
+
+export const DLPerosnalList = styled.div`
+    font-family: 'Roboto';
+    font-size: 1.05vw;
+    font-weight: 300;
+    color: #5f5e5e;
+    width: 100%;
+    margin: 2vh 0;
+
+    li {
+        margin: 1vh 0;
+    }
+
+    @media screen and (max-width: 1023px) {
+        font-size: 2vw;
+        
+        li {
+            margin: 2vh 0;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 5vw;
+        margin: 5vh 0;
+
+        li {
+            margin: 2vh 0;
+            text-align: justify;
+        }
+    }
+`;
+
+export const DLMiniTitle = styled.div`
+    font-family: 'Roboto';
+    font-size: 1.40vw;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 2.5vw;
+        margin: 2vh 0 -2vh 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 5.75vw;
+    }
+`;
+
+export const DLBottom = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #F1F4F6;
+`;

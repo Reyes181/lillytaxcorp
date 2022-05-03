@@ -126,8 +126,8 @@ const Location = () => {
                         <LocationContact>
                             <ContactTitle>Contact</ContactTitle>
                             <ContactWays>
-                                <div>Phone: <span>(718)-555-5555</span></div>
-                                <div>WhatsApp: <span>(929)-444-4444</span></div>
+                                <div>Phone: <span>(718)-365-1595</span></div>
+                                <div>WhatsApp: <span>(929)-412-9401</span></div>
                                 <div>Email: <span>info@lillytaxny.com</span></div>
                             </ContactWays>
                             <ContactDesc>

@@ -75,7 +75,7 @@ const ITINSection = () => {
                                 If you are renewing your ITIN you won't have to file a federal income tax return, but we will still need to check your documents in order to attach a COA with your certified copies and Form W-7.
                             </div>
                             <div>
-                                Once we have your application package ready you will need to sign a couple of forms and we will take care of sending your application to the IRS. 
+                                Once we have your application package ready you will need to sign a couple of forms and we'll prepare all necessary information for you to send your application to the IRS. 
                             </div>
                         </ITINBottomBody>
                     </ITINBottom>

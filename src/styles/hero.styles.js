@@ -157,7 +157,7 @@ export const BannerContent = styled.div`
         height: 75%;
 
         div {
-            font-size: 4vw;
+            font-size: 3vw;
             font-weight: 700;
             text-align: center;
         }
@@ -178,13 +178,13 @@ export const BannerHeader = styled.div`
     font-family: 'Changa One' !important;
 
     @media screen and (max-width: 1023px) {
-        font-size: 6vw !important;
+        font-size: 4vw !important;
         text-align: center;
         color: #fff !important;
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 14vw !important;
+        font-size: 12vw !important;
     }
 `;
 
@@ -204,11 +204,11 @@ export const BannerButton = styled(Link)`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
     @media screen and (max-width: 1023px) {
-        width: 40%;
+        width: 30%;
         padding: 0px;
         height: 4vh;
         border-radius: 5px;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     @media screen and (max-width: 600px) {

@@ -28,7 +28,7 @@ const Hero = () => {
                     </HeroListItem>
                     <HeroListItem>
                         <CheckCircleOutlineIcon sx={{ fontSize: 60 }}/>
-                        <div>Tax Amendments</div>
+                        <div>Tax Preparation</div>
                     </HeroListItem>
                 </HeroLeftContainer>
                 <HeroRightContainer>
