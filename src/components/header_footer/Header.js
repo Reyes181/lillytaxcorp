@@ -40,9 +40,9 @@ const Header = ({drawerToggleHandler}) => {
                                 <NavLink to={{pathname: '/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     ITIN
                                 </NavLink>
-                                <NavLink to={{pathname: '/immigration'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                                {/* <NavLink to={{pathname: '/immigration'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Immigration
-                                </NavLink>
+                                </NavLink> */}
                                 <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Location
                                 </NavLink>
