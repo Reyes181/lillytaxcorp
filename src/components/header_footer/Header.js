@@ -31,18 +31,12 @@ const Header = ({drawerToggleHandler}) => {
                             </HeaderLogoBox>
 
                             <HeaderNav>
-                                {/* <NavLink to={{pathname: '/'}} activeStyle={{fontWeight: "bold", color: "red"}}>
-                                    Home
-                                </NavLink> */}
                                 <NavLink to={{pathname: '/taxfiling'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Tax Filing
                                 </NavLink>
                                 <NavLink to={{pathname: '/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     ITIN
                                 </NavLink>
-                                {/* <NavLink to={{pathname: '/immigration'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
-                                    Immigration
-                                </NavLink> */}
                                 <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Location
                                 </NavLink>

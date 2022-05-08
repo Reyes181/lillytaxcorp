@@ -83,27 +83,27 @@ const Location = () => {
 
                                 <li>
                                     <span>Monday</span>
-                                    <span>09:00AM to 8:00PM</span>
+                                    <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
                                     <span>Tuesday</span>
-                                    <span>09:00AM to 8:00PM</span>
+                                    <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
                                     <span>Wednesday</span>
-                                    <span>09:00AM to 8:00PM</span>
+                                    <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
                                     <span>Thursday</span>
-                                    <span>09:00AM to 8:00PM</span>
+                                    <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
                                     <span>Friday</span>
-                                    <span>09:00AM to 8:00PM</span>
+                                    <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
@@ -131,7 +131,7 @@ const Location = () => {
                                 <div>Email: <span>info@lillytaxny.com</span></div>
                             </ContactWays>
                             <ContactDesc>
-                                 Bussiness hours are subject to change upon reuqest made by appointment during regular bussiness hours or tax season hours.
+                                 Bussiness hours are subject to change upon request made by appointment.
                             </ContactDesc>
                         </LocationContact>
                         

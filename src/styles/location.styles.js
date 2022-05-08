@@ -171,16 +171,21 @@ export const LocationHours = styled.div`
 
         li {
             width: 100%;
-            font-size: 1.25vw;
+            font-size: 0.95vw;
             font-family: 'Roboto';
-            font-weight: 300;
+            font-weight: 500;
             display: flex;
             justify-content: space-between;
+            align-content: flex-end;
             margin: 1vh 0;
 
             span:nth-child(1){
-                font-weight: 500;
                 color: #5f5e5e;
+                font-size: 1.25vw;
+            }
+
+            span:nth-child(2){
+                padding: 0.8vh 0 0 0;
             }
         }
     }
@@ -191,11 +196,16 @@ export const LocationHours = styled.div`
 
         div {
             font-size: 1.75vw;
+            font-weight: 300;
         }
     
         ul {
             li {
                 font-size: 1.75vw;
+
+                span:nth-child(2){
+                    padding: 0;
+                }
             }
         }
     }
@@ -286,37 +296,38 @@ export const ContactWays = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    font-size: 1.25vw;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: 500;
+    color: #5f5e5e;
+                
 
     div {
         flex-basis: 50%;
         margin: 0 0 2vh 0;
+        font-size: 0.95vw;
 
         span {
-            font-weight: 500;
-            color: #5f5e5e;
+            font-size: 1.25vw;
         }
     }
 
     @media screen and (max-width: 1023px) {
-        font-size: 1.75vw;
 
         div {
             flex-basis: 100%;
             margin: 1vh 0;
+            font-size: 1.75vw;
         }
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 5vw;
         flex-direction: column;
         margin: 2vh 0;
 
         div {
             flex-basis: 50%;
             margin: 0 0 2vh 0;
+            font-size: 5vw;
         }
     }
 `;
@@ -347,5 +358,233 @@ export const ContactDesc = styled.div`
         height: 30vh;
         font-size: 5vw;
         margin: 0;
+    }
+`;
+
+export const AboutContianer = styled.div`
+    width: 80%;
+    margin: 10vh auto;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1023px){
+        width: 90%;
+        margin: 3vh auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column !important;
+    }
+`;
+
+export const AboutTopLeft = styled.div`
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+
+    hr {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-basis: 50%;
+        margin: 3vh auto;
+    }
+`;
+
+export const AboutTopRight = styled.div`
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+        height: auto;
+        width: 90%;
+    }
+
+    @media screen and (max-width: 1023px){
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 3vh auto;
+        justify-content: center !important;
+
+        img {
+            width: 100%;
+        }
+    }
+`;
+
+export const AboutBadge = styled.div`
+    width: 30%;
+    height: 5vh;
+    background: #5f5e5e;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 0.775vw;
+
+    @media screen and (max-width: 1023px){
+        width: 50%;
+        height: 3vh;
+        font-size: 1vw;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 6vh;
+        font-size: 5.5vw;
+    }
+`;
+
+export const AboutTitle = styled.div`
+    width: 80%;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2.50vw;
+    color: #0c0c0c;
+    margin:  2vh 0;
+
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        margin: 1vh 0 2vh 0;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: 9.5vw;
+    }
+`;
+
+export const AboutDesc = styled.div`
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.25vw;
+    line-height: 30px;
+
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        font-size: 2vw;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        font-size: 5vw;
+        text-align: justify-content;
+    }
+`;
+
+export const AboutSubContainer = styled.div`
+    width: 40%;
+    margin: 5vh auto 10vh auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    hr {
+        width: 50%;
+        margin: 5vh auto;
+    }
+
+    @media screen and (max-width: 1023px){
+        width: 60%;
+        margin: 5vh auto;
+
+        hr {
+            margin: 2vh auto;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        margin: 5vh auto 10vh auto;
+
+        hr {
+            margin: 5vh auto;
+        }
+    }
+`;
+
+export const AboutSubTitle = styled.div`
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.25vw;
+
+    span {
+        color: rgb(255, 203, 5);
+    }
+
+    @media screen and (max-width: 1023px){
+        font-size: 3.5vw;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: 7vw;
+    }
+`;
+
+export const AboutSubDesc = styled.div`
+    width: 60%;
+    font-family: 'Roboto';
+    font-size: 300;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5vw;
+
+    @media screen and (max-width: 1023px){
+        width: 80%;
+        font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        font-size: 5vw;
+    }
+`;
+
+export const AboutSubImage = styled.div`
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 90%;
+        width: 90%;
+    }
+
+    @media screen and (max-width: 1023px){
+        height: 25vh;
+
+        img {
+            height: 90%;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 35vh;
+
+        img {
+            height: 90%;
+            width: 90%;
+        }
     }
 `;
