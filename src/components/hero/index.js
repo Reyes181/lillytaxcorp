@@ -12,6 +12,7 @@ const Hero = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Home - Lilly Tax Corp.'
     }, [pathname]);
 
     return (

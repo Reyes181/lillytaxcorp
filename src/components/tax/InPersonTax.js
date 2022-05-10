@@ -17,6 +17,7 @@ const InPersonTax = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'In Person Tax Filing - Lilly Tax Corp.'
     }, [pathname]);
 
     const navList = [

@@ -115,6 +115,9 @@ export const LocationAddress = styled.div`
         font-size: 1.25vw;
         font-family: 'Roboto';
         font-weight: 700;
+        background: rgb(255, 203, 5);
+        color: #fff;
+        padding-left: 1vh;
     }
 
     div:nth-child(2){
@@ -162,6 +165,9 @@ export const LocationHours = styled.div`
         font-size: 1.25vw;
         font-family: 'Roboto';
         font-weight: 700;
+        background: rgb(255, 203, 5);
+        color: #fff;
+        padding-left: 1vh;
     }
 
     ul {
@@ -196,12 +202,15 @@ export const LocationHours = styled.div`
 
         div {
             font-size: 1.75vw;
-            font-weight: 300;
         }
     
         ul {
             li {
                 font-size: 1.75vw;
+
+                span:nth-child(1){
+                    font-size: 1.75vw;
+                }
 
                 span:nth-child(2){
                     padding: 0;
@@ -220,6 +229,10 @@ export const LocationHours = styled.div`
         ul {
             li {
                 font-size: 5vw;
+
+                span:nth-child(1){
+                    font-size: 5vw;
+                }
             }
         }
     }
@@ -281,6 +294,10 @@ export const ContactTitle = styled.div`
     font-size: 1.25vw;
     font-family: 'Roboto';
     font-weight: 700;
+    background: rgb(255, 203, 5);
+    color: #fff;
+    padding-left: 1vh;
+    width: 99%;
 
     @media screen and (max-width: 1023px) {
         font-size: 1.75vw;
@@ -300,33 +317,74 @@ export const ContactWays = styled.div`
     font-weight: 500;
     color: #5f5e5e;
                 
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+    
+`;
 
-    div {
+export const ContactWaysContent = styled.div`
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0;
+
+    div:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         flex-basis: 50%;
-        margin: 0 0 2vh 0;
-        font-size: 0.95vw;
-
+        margin-bottom: 1vh;
+        color: rgb(17,41,96);
+        
         span {
-            font-size: 1.25vw;
+            font-size: 0.85vw;
+            font-weight: 700;
+        }
+
+        svg {
+            margin-right: 1vh;
         }
     }
 
-    @media screen and (max-width: 1023px) {
+    div:nth-child(2){
+        flex-basis: 50%;
+        font-size: 1.25vw;
+        text-align: left;
+    }
 
-        div {
-            flex-basis: 100%;
-            margin: 1vh 0;
+    @media screen and (max-width: 1023px) {
+        div:nth-child(1){
+            
+            span {
+                font-size: 1.5vw;
+            }
+    
+            svg {
+                margin-right: 1vh;
+            }
+        }
+
+        div:nth-child(2){
             font-size: 1.75vw;
         }
     }
 
     @media screen and (max-width: 600px) {
-        flex-direction: column;
-        margin: 2vh 0;
+        div:nth-child(1){
+            margin-bottom: 1vh;
+            
+            span {
+                font-size: 5vw;
+            }
+    
+            svg {
+                margin-right: 1vh;
+                font-size: 10vw;
+            }
+        }
 
-        div {
-            flex-basis: 50%;
-            margin: 0 0 2vh 0;
+        div:nth-child(2){
             font-size: 5vw;
         }
     }

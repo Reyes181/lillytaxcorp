@@ -32,7 +32,6 @@ const Footer = () => {
                         <li><Link to='/location'>Contact Us</Link></li>
                         <li><Link to='/location'>Location</Link></li>
                         <li><Link to='/location/about'>About Lilly Tax</Link></li>
-                        <li><Link to='/location/services'>Services</Link></li>
                     </ul>
                 </div>
             </FooterContent>

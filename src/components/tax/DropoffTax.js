@@ -18,6 +18,7 @@ const DropoffTax = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Drop Off Tax Filing - Lilly Tax Corp.'
     }, [pathname]);
 
 

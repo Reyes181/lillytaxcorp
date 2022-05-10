@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {HeaderBar, HeaderLogoBox, HeaderLogo, HeaderContainer, HeaderContent, HeaderLanguage, HeaderNav, MobileBurger} from '../../styles/header.styles'
 
 
-const Header = ({drawerToggleHandler}) => {
+const Header = ({drawerToggleHandler, handleLanguageChange}) => {
     return (
         <Box sx={{flexGrow: 1}}>
             <HeaderBar>
@@ -43,10 +43,10 @@ const Header = ({drawerToggleHandler}) => {
                             </HeaderNav>
 
                             <HeaderLanguage>
-                                <a href='/'>
+                                <a href='/' onClick={() => handleLanguageChange('english')}>
                                     <img src={EnglishFlag} alt='English'/>
                                 </a>
-                                <a href='/'>
+                                <a href='/' onClick={() => handleLanguageChange('spanish')}>
                                     <img src={SpanishFlag} alt='Spanish'/>
                                 </a>
                             </HeaderLanguage>

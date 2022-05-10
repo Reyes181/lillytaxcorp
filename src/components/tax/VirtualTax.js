@@ -17,6 +17,7 @@ const VirtualTax = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Virtual Tax Filing - Lilly Tax Corp.'
     }, [pathname]);
     
     const navList = [

@@ -10,6 +10,7 @@ const TaxMain = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Tax Filing Service - Lilly Tax Corp.'
     }, [pathname]);
     
     return (

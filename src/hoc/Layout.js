@@ -23,7 +23,7 @@ const Layout = (props) => {
     }
     return (
         <div className='Layout'>
-            <Header drawerToggleHandler={drawerToggleHandler}/>
+            <Header drawerToggleHandler={drawerToggleHandler}  handleLanguageChange={props.handleLanguageChange}/>
             <SideDrawer show={sideOpen} click={backdropClickHandler}/>
             {backDrop}
             {props.children}

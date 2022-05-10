@@ -1,15 +1,18 @@
 import React, {useEffect} from 'react';
 import { useLocation } from "react-router";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import {LocationContainer, LocationTop, LocationTopLeft, LocationTopRight, LocationHeader, LocationContent, 
-    LocationAddress, LocationHours, LocationContact, ContactTitle, ContactWays, ContactDesc} from '../../styles/location.styles.js';
-
+    LocationAddress, LocationHours, LocationContact, ContactTitle, ContactWays, ContactDesc, ContactWaysContent} from '../../styles/location.styles.js';
 
 const Location = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Location & Hours - Lilly Tax Corp.'
     }, [pathname]);
     return (
         <LocationContainer>
@@ -126,9 +129,27 @@ const Location = () => {
                         <LocationContact>
                             <ContactTitle>Contact</ContactTitle>
                             <ContactWays>
-                                <div>Phone: <span>(718)-365-1595</span></div>
-                                <div>WhatsApp: <span>(929)-412-9401</span></div>
-                                <div>Email: <span>info@lillytaxny.com</span></div>
+                                <ContactWaysContent>
+                                    <div>
+                                        <LocalPhoneIcon/>
+                                        <span>Phone</span>    
+                                    </div> 
+                                    <div>(718)-365-1595</div>
+                                </ContactWaysContent>
+                                <ContactWaysContent>
+                                    <div>
+                                        <WhatsAppIcon/>
+                                        <span>WhatsApp</span>    
+                                    </div> 
+                                    <div>(929)-412-9401</div>
+                                </ContactWaysContent>
+                                <ContactWaysContent>
+                                    <div>
+                                        <MailOutlineIcon/>
+                                        <span>Email</span>    
+                                    </div> 
+                                    <div>info@lillytaxny.com</div>
+                                </ContactWaysContent>
                             </ContactWays>
                             <ContactDesc>
                                  Bussiness hours are subject to change upon request made by appointment.

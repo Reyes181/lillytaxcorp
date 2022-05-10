@@ -14,6 +14,7 @@ const ITINSection = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'ITIN Service - Lilly Tax Corp.'
     }, [pathname]);
     return (
         <ITINContainer>

@@ -4,6 +4,7 @@ import Banner from '../hero/Banner';
 import InfoIcon from '@mui/icons-material/Info';
 import LillySelf from '../../resources/images/lilly.JPG';
 import LillyGroup from '../../resources/images/lillygroup.JPG';
+import LillyFamily from '../../resources/images/lillyFamily.jpg';
 import {LocationContainer, LocationHeader, AboutContianer, AboutTopLeft, AboutTopRight, AboutBadge, AboutDesc, AboutTitle,
     AboutSubContainer, AboutSubTitle, AboutSubDesc, AboutSubImage
 } from '../../styles/location.styles.js';
@@ -13,6 +14,7 @@ const About = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'About - Lilly Tax Corp.'
     }, [pathname]);
 
     return (
@@ -58,7 +60,7 @@ const About = () => {
                 <AboutSubTitle><span>Refer Us</span> To Your Family & Friends</AboutSubTitle>
                 <hr/>
                 <AboutSubImage>
-                    <img src={LillyGroup} alt='Garcia Family'/>
+                    <img src={LillyFamily} alt='Garcia Family'/>
                 </AboutSubImage>
                 <hr/>
                 <AboutSubDesc>
