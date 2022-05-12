@@ -11,7 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {HeaderBar, HeaderLogoBox, HeaderLogo, HeaderContainer, HeaderContent, HeaderLanguage, HeaderNav, MobileBurger} from '../../styles/header.styles'
 
 
-const Header = ({drawerToggleHandler, getLanguageChangeStart}) => {
+const HeaderEs = ({drawerToggleHandler, getLanguageChangeStart}) => {
     return (
         <Box sx={{flexGrow: 1}}>
             <HeaderBar>
@@ -34,13 +34,13 @@ const Header = ({drawerToggleHandler, getLanguageChangeStart}) => {
 
                             <HeaderNav>
                                 <NavLink to={{pathname: '/taxfiling'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
-                                    Tax Filing
+                                    Impuestos
                                 </NavLink>
                                 <NavLink to={{pathname: '/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     ITIN
                                 </NavLink>
                                 <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
-                                    Location
+                                    Localización
                                 </NavLink>
                             </HeaderNav>
 
@@ -70,4 +70,4 @@ const mapDispatchToProps = dispatch => ({
     getLanguageChangeStart: (lang) => dispatch(getLanguageChangeStart(lang))
 });
 
-export default connect(null, mapDispatchToProps)(Header);
+export default connect(null, mapDispatchToProps)(HeaderEs);

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Header from '../components/header_footer/Header';
-import Footer from '../components/header_footer/Footer';
+import HeaderEs from '../components/header_footer/HeaderES';
+import FooterEs from '../components/header_footer/FooterES';
 import BackDrop from '../components/header_footer/Backdrop';
-import SideDrawer from '../components/header_footer/SideDrawer';
+import SideDrawerEs from '../components/header_footer/SideDrawerES';
 
-const Layout = (props) => {
+const LayoutEs = (props) => {
     const [sideOpen, setSideOpen] = useState(false);
     // const prevRef = useRef();
 
@@ -23,13 +23,13 @@ const Layout = (props) => {
     }
     return (
         <div className='Layout'>
-            <Header drawerToggleHandler={drawerToggleHandler}/>
-            <SideDrawer show={sideOpen} click={backdropClickHandler}/>
+            <HeaderEs drawerToggleHandler={drawerToggleHandler}/>
+            <SideDrawerEs show={sideOpen} click={backdropClickHandler}/>
             {backDrop}
             {props.children}
-            <Footer/>
+            <FooterEs/>
         </div>
     )
 }
 
-export default Layout;
+export default LayoutEs;

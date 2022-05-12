@@ -24,7 +24,7 @@ const SideDrawerNav = styled.nav`
             box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5)
         }
     `;
-const SideDrawer = ({getLanguageChangeStart, ...props}) => {
+const SideDrawerEs = ({getLanguageChangeStart, ...props}) => {
     
     
     return (
@@ -33,12 +33,12 @@ const SideDrawer = ({getLanguageChangeStart, ...props}) => {
                 <ul>
                     <li>
                         <NavLink to={{pathname: '/'}}>
-                            Home
+                            Página Principal
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={{pathname: '/taxfiling'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
-                            Tax Filing
+                            Impuestos
                         </NavLink>
                     </li>
                     <li>
@@ -48,7 +48,7 @@ const SideDrawer = ({getLanguageChangeStart, ...props}) => {
                     </li>
                     <li>
                         <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
-                            Location
+                            Localización
                         </NavLink>
                     </li>
                 </ul>
@@ -70,4 +70,4 @@ const mapDispatchToProps = dispatch => ({
     getLanguageChangeStart: (lang) => dispatch(getLanguageChangeStart(lang))
 });
 
-export default connect(null, mapDispatchToProps)(SideDrawer);
+export default connect(null, mapDispatchToProps)(SideDrawerEs);
