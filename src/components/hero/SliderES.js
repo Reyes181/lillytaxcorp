@@ -6,7 +6,7 @@ import { SliderContainer, SliderItemContainer, SliderImg, SliderDetails, SliderT
 import Bank from '../../resources/images/Bank.png';
 import ManMoney from '../../resources/images/ManMoney.png';
 
-const SliderContent = () => {
+const SliderContentEs = () => {
 
     const settings = {
         dots: true,
@@ -18,18 +18,18 @@ const SliderContent = () => {
 
     const Items = [
         {
-            title: 'Pay Nothing Now',
-            description: 'Use your refund to pay your tax prep fees. Its easy! With E-file, get back your money Fast & Easy.',
+            title: 'Sin Pagar de Sus Bolsillos',
+            description: 'Use su reembolso para pagar sus tarifas de preparación de impuestos. ¡Es fácil! Con E-file, recupere su dinero rápido y fácil.',
             image: ManMoney,
-            badge: 'Taxes',
-            link: '/taxfiling'
+            badge: 'Impuestos',
+            link: '/es/impuestos'
         },
         {
-            title: 'Request your ITIN number',
-            description: 'At Lilly Tax, we are experts in preparing 7-W forms, corresponding to the individual taxpayer identification number (ITIN) granted by the IRS. Come and take advantage of the benefits offered by this identification.',
+            title: 'Solicita tu Numero ITIN',
+            description: 'En Lilly Tax somos expertos en la elaboración de formularios 7-W, correspondientes al número de identificación personal del contribuyente (ITIN) otorgado por el IRS. Ven y aprovecha los beneficios que te ofrece esta identificación.',
             image: Bank,
             badge: 'ITIN',
-            link: '/itin'
+            link: '/es/itin'
         }
     ]
 
@@ -48,7 +48,7 @@ const SliderContent = () => {
                             <hr/>
                             <SliderTitle>{item.title}</SliderTitle>
                             <SliderDesc>{item.description}</SliderDesc>
-                            <SliderButton to={item.link}>Learn More</SliderButton>
+                            <SliderButton to={item.link}>Aprende Más</SliderButton>
                         </SliderDetails>
                     </SliderItemContainer>
                 ))}
@@ -57,4 +57,4 @@ const SliderContent = () => {
     )
 };
 
-export default SliderContent;
+export default SliderContentEs;

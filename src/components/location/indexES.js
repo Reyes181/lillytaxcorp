@@ -7,18 +7,18 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import {LocationContainer, LocationTop, LocationTopLeft, LocationTopRight, LocationHeader, LocationContent, 
     LocationAddress, LocationHours, LocationContact, ContactTitle, ContactWays, ContactDesc, ContactWaysContent} from '../../styles/location.styles.js';
 
-const Location = () => {
+const LocationEs = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        document.title = 'Location & Hours - Lilly Tax Corp.'
+        document.title = 'Ubicación y Horario - Lilly Tax Corp.'
     }, [pathname]);
     return (
         <LocationContainer>
             <LocationHeader>
                 <CalendarMonthIcon sx={{ fontSize: 80 }}/>
-                <span>Location & Hours</span>
+                <span>Ubicación y Horario</span>
             </LocationHeader>
             <LocationContent>
                 <LocationTop>
@@ -26,7 +26,7 @@ const Location = () => {
                         
                         <LocationAddress>
                             <div>
-                                Address
+                                Dirección
                             </div>
                             <div>
                                 <span>213 E 181ST Street</span>
@@ -35,82 +35,82 @@ const Location = () => {
                         </LocationAddress>
                         <LocationHours>
                             <div>
-                                Normal Bussiness Hours
+                                Horario Normal de Trabajo
                             </div>
                             <ul>
                                 <li>
-                                    <span>Sunday</span>
-                                    <span>Closed</span>
+                                    <span>Domingo</span>
+                                    <span>Cerrado</span>
                                 </li>
 
                                 <li>
-                                    <span>Monday</span>
+                                    <span>Lunes</span>
                                     <span>12:00PM to 5:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Tuesday</span>
-                                    <span>Closed</span>
+                                    <span>Martes</span>
+                                    <span>Cerrado</span>
                                 </li>
 
                                 <li>
-                                    <span>Wednesday</span>
+                                    <span>Miércoles</span>
                                     <span>12:00PM to 5:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Thursday</span>
-                                    <span>Closed</span>
+                                    <span>Jueves</span>
+                                    <span>Cerrado</span>
                                 </li>
 
                                 <li>
-                                    <span>Friday</span>
+                                    <span>Viernes</span>
                                     <span>12:00PM to 5:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Saturday</span>
-                                    <span>Closed</span>
+                                    <span>Sábado</span>
+                                    <span>Cerrado</span>
                                 </li>
                             </ul>
                         </LocationHours>
                         <LocationHours>
                             <div>
-                                Tax Season Bussiness Hours
+                                Horario Comercial de La Temporada de Impuestos
                             </div>
                             <ul>
                                 <li>
-                                    <span>Sunday</span>
+                                    <span>Domingo</span>
                                     <span>12:00PM to 5:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Monday</span>
+                                    <span>Lunes</span>
                                     <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Tuesday</span>
+                                    <span>Martes</span>
                                     <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Wednesday</span>
+                                    <span>Miércoles</span>
                                     <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Thursday</span>
+                                    <span>Jueves</span>
                                     <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Friday</span>
+                                    <span>Viernes</span>
                                     <span>9:00AM to 8:00PM</span>
                                 </li>
 
                                 <li>
-                                    <span>Saturday</span>
+                                    <span>Sábado</span>
                                     <span>12:00PM to 5:00PM</span>
                                 </li>
                             </ul>
@@ -127,12 +127,12 @@ const Location = () => {
                             referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                         <LocationContact>
-                            <ContactTitle>Contact</ContactTitle>
+                            <ContactTitle>Contacto</ContactTitle>
                             <ContactWays>
                                 <ContactWaysContent>
                                     <div>
                                         <LocalPhoneIcon/>
-                                        <span>Phone</span>    
+                                        <span>Teléfono</span>    
                                     </div> 
                                     <div>(718)-365-1595</div>
                                 </ContactWaysContent>
@@ -152,7 +152,7 @@ const Location = () => {
                                 </ContactWaysContent>
                             </ContactWays>
                             <ContactDesc>
-                                 Business hours are subject to change upon request made by appointment.
+                                El horario de atención está sujeto a cambios previa solicitud realizada con cita previa.
                             </ContactDesc>
                         </LocationContact>
                         
@@ -164,4 +164,4 @@ const Location = () => {
     )
 }
 
-export default Location;
+export default LocationEs;

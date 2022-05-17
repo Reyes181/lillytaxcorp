@@ -48,7 +48,7 @@ const Header = ({drawerToggleHandler, getLanguageChangeStart}) => {
                                 <a href='/' onClick={() => getLanguageChangeStart(true)}>
                                     <img src={EnglishFlag} alt='English'/>
                                 </a>
-                                <a href='/' onClick={() => getLanguageChangeStart(false)}>
+                                <a href='/' onClick={() => getLanguageChangeStart(false)} style={{opacity: '0.5'}}>
                                     <img src={SpanishFlag} alt='Spanish'/>
                                 </a>
                             </HeaderLanguage>

@@ -37,24 +37,24 @@ const SideDrawerEs = ({getLanguageChangeStart, ...props}) => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={{pathname: '/taxfiling'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                        <NavLink to={{pathname: '/es/impuestos'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                             Impuestos
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={{pathname: '/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                        <NavLink to={{pathname: '/es/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                             ITIN
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                        <NavLink to={{pathname: '/es/localización'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                             Localización
                         </NavLink>
                     </li>
                 </ul>
 
                 <LanguageBadge>
-                    <a href='/' onClick={() => getLanguageChangeStart(true)}>
+                    <a href='/' onClick={() => getLanguageChangeStart(true)} style={{opacity: '0.5'}}>
                         <img src={EnglishFlag} alt='English'/>
                     </a>
                     <a href='/' onClick={() => getLanguageChangeStart(false)}>

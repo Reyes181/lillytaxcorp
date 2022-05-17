@@ -5,12 +5,12 @@ import FolderIcon from '@mui/icons-material/Folder';
 import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
 import {TaxFileContainer, TaxMainContainer, TaxFileSubHeader, TaxFileTerms, TaxCard, TaxCardContainer, TaxCardDesc, TaxCardTitle, TaxIcon, TaxFileLeft, TaxFileRight, TaxFileRightConatiner} from '../../styles/tax.styles';
 
-const TaxMain = () => {
+const TaxMainEs = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        document.title = 'Tax Filing Service - Lilly Tax Corp.'
+        document.title = 'Servicio de Declaración de Impuestos - Lilly Tax Corp.'
     }, [pathname]);
     
     return (
@@ -19,58 +19,58 @@ const TaxMain = () => {
               
                 <TaxFileLeft>
                     <TaxFileSubHeader>
-                        <p>File Your Taxes Now.</p>
-                        <p>File now, and pay later!</p>
+                        <p>Presente Sus Impuestos Ahora.</p>
+                        <p>¡Presente ahora y pague después!</p>
                     </TaxFileSubHeader>
                     <TaxFileTerms>
-                        Additional fee of $39.95 applied on using this service. The Refund Transfer is an optional tax refund-related product offered by MetaBank, N.A., Member FDIC.
-                        The Refund Transfer is not a loan. E-filing of a tax return is required to be eligible for the product. Subject to approval. Fees apply.
-                        See terms and conditions for details.
+                        Se aplica una tarifa adicional de $ 39.95 al usar este servicio. La transferencia de reembolso es un producto opcional relacionado con el reembolso de impuestos que ofrece MetaBank, N.A., miembro de la FDIC.
+                        La transferencia de reembolso no es un préstamo. Se requiere la presentación electrónica de una declaración de impuestos para ser elegible para el producto. Sujeto a aprobación. Se aplican tarifas.
+                        Ver términos y condiciones para más detalles.
                     </TaxFileTerms>
                 </TaxFileLeft>
                 <TaxFileRight>
                     <TaxFileRightConatiner>
                         <div>$0</div>
-                        <div>out of pocket, today.</div>
+                        <div>de su bolsillo, hoy.</div>
                     </TaxFileRightConatiner>
                 </TaxFileRight>
             </TaxFileContainer>
 
             <TaxCardContainer>
-                <TaxCard to={'/taxfiling/in-person-preparation'}>
+                <TaxCard to={'/es/impuestos/declaración-en-persona'}>
                     <TaxIcon>
                         <StoreIcon  sx={{ fontSize: 80 }}/>
                     </TaxIcon>
                     <TaxCardTitle>
-                        In-person Tax Preparation
+                        Declaración En Persona
                     </TaxCardTitle>
                     <TaxCardDesc>
-                        Prepare your taxes directly in our offices with us. 
-                        Ask any questions you have and work alongside our experienced tax preparer.
+                        Prepara tus impuestos directamente en nuestras oficinas con nosotros. 
+                        Haga cualquier pregunta que tenga y trabaje junto con nuestro experimentado preparador de impuestos.
                     </TaxCardDesc>
                 </TaxCard>
 
-                <TaxCard to={'/taxfiling/dropoff-preparation'}>
+                <TaxCard to={'/es/impuestos/declaración-drop-off'}>
                     <TaxIcon>
                         <FolderIcon sx={{ fontSize: 80 }}/>
                     </TaxIcon>
                     <TaxCardTitle>
-                        Drop-off Tax Preparation
+                        Declaración "Drop-Off"
                     </TaxCardTitle>
                     <TaxCardDesc>
-                        Gather all of your tax documents and drop them off at our office, we will take care of the rest.
+                        Reúna todos sus documentos fiscales y déjelos en nuestra oficina, nosotros nos encargaremos del resto.
                     </TaxCardDesc>
                 </TaxCard>
 
-                <TaxCard to={'/taxfiling/virtual-preparation'}>
+                <TaxCard to={'/es/impuestos/declaración-virtual'}>
                     <TaxIcon>
                         <ImportantDevicesIcon sx={{ fontSize: 80 }}/>
                     </TaxIcon>
                     <TaxCardTitle>
-                        Virtual Tax Preparation
+                        Declaración Virtual
                     </TaxCardTitle>
                     <TaxCardDesc>
-                        Upload your information and tax documents to our secure email address and WhatsApp messenger. All from the comfort of your home.
+                        Cargue su información y documentos fiscales a nuestra dirección de correo electrónico segura y al mensajero de WhatsApp. Todo desde la comodidad de su hogar.
                     </TaxCardDesc>
                 </TaxCard>
             </TaxCardContainer>
@@ -78,4 +78,4 @@ const TaxMain = () => {
     )
 };
 
-export default TaxMain;
+export default TaxMainEs;

@@ -257,7 +257,7 @@ const DocumentCheckList = () => {
                             </TaxCardDesc>
                         </TaxCard>
 
-                        <TaxCard to={'/taxfiling/virtual-preparation'}>
+                        <TaxCard to={'/taxfiling/dropoff-preparation'}>
                             <TaxIcon>
                                 <FolderIcon sx={{ fontSize: 80 }}/>
                             </TaxIcon>
@@ -269,7 +269,7 @@ const DocumentCheckList = () => {
                             </TaxCardDesc>
                         </TaxCard>
 
-                        <TaxCard to={'/taxfiling/dropoff-preparation'}>
+                        <TaxCard to={'/taxfiling/virtual-preparation'}>
                             <TaxIcon>
                                 <ImportantDevicesIcon sx={{ fontSize: 80 }}/>
                             </TaxIcon>

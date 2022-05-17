@@ -10,26 +10,26 @@ const FooterEs = () => {
                 <div>
                     <span>Servicios de Impuestos</span>
                     <ul>
-                        <li><Link to='/taxfiling/documentchecklist'>Lista de Documentos</Link></li>
-                        <li><Link to='/taxfiling/in-person-preparation'>Declaración En Persona</Link></li>
-                        <li><Link to='/taxfiling/dropoff-preparation'>Declaración "Drop-Off"</Link></li>
-                        <li><Link to='/taxfiling/virtual-preparation'>Declaración Virtual</Link></li>
+                        <li><Link to='/es/impuestos/lista-de-documentos'>Lista de Documentos</Link></li>
+                        <li><Link to='/es/impuestos/declaración-en-persona'>Declaración En Persona</Link></li>
+                        <li><Link to='/es/impuestos/declaración-drop-off'>Declaración "Drop-Off"</Link></li>
+                        <li><Link to='/es/impuestos/declaración-virtual'>Declaración Virtual</Link></li>
                     </ul>
                 </div>
                 <div>
                     <span>Soluciones de ITIN</span>
                     <ul>
-                        <li><Link to='/itin'>Documentos Requeridos</Link></li>
-                        <li><Link to='/itin'>Proceso</Link></li>
-                        <li><Link to='/itin'>¿Quién necesita un ITIN?</Link></li>
+                        <li><Link to='/es/itin'>Documentos Requeridos</Link></li>
+                        <li><Link to='/es/itin'>Proceso</Link></li>
+                        <li><Link to='/es/itin'>¿Quién necesita un ITIN?</Link></li>
                     </ul>
                 </div>
                 <div>
                     <span>Acerca de</span>
                     <ul>
-                        <li><Link to='/location'>Contacta Con Cosotros</Link></li>
-                        <li><Link to='/location'>Localización</Link></li>
-                        <li><Link to='/location/about'>Acerca de Lilly Tax</Link></li>
+                        <li><Link to='/es/localización'>Contacta Con Cosotros</Link></li>
+                        <li><Link to='/es/localización'>Localización</Link></li>
+                        <li><Link to='/es/localización/acerca'>Acerca de Lilly Tax</Link></li>
                     </ul>
                 </div>
             </FooterContent>

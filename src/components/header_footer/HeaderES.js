@@ -33,19 +33,19 @@ const HeaderEs = ({drawerToggleHandler, getLanguageChangeStart}) => {
                             </HeaderLogoBox>
 
                             <HeaderNav>
-                                <NavLink to={{pathname: '/taxfiling'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                                <NavLink to={{pathname: '/es/impuestos'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Impuestos
                                 </NavLink>
-                                <NavLink to={{pathname: '/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                                <NavLink to={{pathname: '/es/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     ITIN
                                 </NavLink>
-                                <NavLink to={{pathname: '/location'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                                <NavLink to={{pathname: '/es/localización'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Localización
                                 </NavLink>
                             </HeaderNav>
 
                             <HeaderLanguage>
-                                <a href='/' onClick={() => getLanguageChangeStart(true)}>
+                                <a href='/' onClick={() => getLanguageChangeStart(true)} style={{opacity: '0.5'}}>
                                     <img src={EnglishFlag} alt='English'/>
                                 </a>
                                 <a href='/' onClick={() => getLanguageChangeStart(false)}>

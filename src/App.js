@@ -9,15 +9,23 @@ import SuspenseBackdrop from './hoc/SuspenseBackdrop';
 
 
 const Hero = lazy(() => import ("./components/hero"));
+const HeroEs = lazy(() => import("./components/hero/indexES"));
 const TaxSection = lazy(() => import("./components/tax"));
+const TaxSectionEs = lazy(() => import("./components/tax/TaxSectionES"));
 const ITINSection =  lazy(() => import("./components/itin"));
+const ITINSectionEs =  lazy(() => import("./components/itin/indexES"));
 const Location = lazy(() => import("./components/location"));
+const LocationEs = lazy(() => import("./components/location/indexES"));
 const About = lazy(() => import('./components/location/About'));
+const AboutEs = lazy(() => import('./components/location/AboutES'));
 const InPersonTax = lazy(() => import("./components/tax/InPersonTax"));
+const InPersonTaxEs = lazy(() => import("./components/tax/InPersonTaxES"));
 const VirtualTax = lazy(() => import("./components/tax/VirtualTax"));
+const VirtualTaxEs = lazy(() => import("./components/tax/VirtualTaxES"));
 const DropoffTax = lazy(() => import('./components/tax/DropoffTax'));
+const DropoffTaxEs = lazy(() => import("./components/tax/DropoffTaxES"));
 const DocumentCheckList = lazy(() => import('./components/tax/DocumentCheckList'));
-
+const DocumentCheckListEs = lazy(() => import('./components/tax/DocumentCheckListES'));
 
 
 const App = ({languageChange}) => {
@@ -102,47 +110,47 @@ const App = ({languageChange}) => {
               <Route
                 exact
                 path="/"
-                render={() => <Hero/>}
+                render={() => <HeroEs/>}
               />
               <Route
                 exact
-                path="/taxfiling"
-                render={() => <TaxSection/>}
+                path="/es/impuestos"
+                render={() => <TaxSectionEs/>}
               />
               <Route
                 exact
-                path="/taxfiling/in-person-preparation"
-                render={() => <InPersonTax/>}
+                path="/es/impuestos/declaración-en-persona"
+                render={() => <InPersonTaxEs/>}
               />
               <Route
                 exact
-                path="/taxfiling/virtual-preparation"
-                render={() => <VirtualTax/>}
+                path="/es/impuestos/declaración-virtual"
+                render={() => <VirtualTaxEs/>}
               />
               <Route
                 exact
-                path="/taxfiling/dropoff-preparation"
-                render={() => <DropoffTax/>}
+                path="/es/impuestos/declaración-drop-off"
+                render={() => <DropoffTaxEs/>}
               />
               <Route
                 exact
-                path="/taxfiling/documentchecklist"
-                render={() => <DocumentCheckList/>}
+                path="/es/impuestos/lista-de-documentos"
+                render={() => <DocumentCheckListEs/>}
               />
               <Route
                 exact
-                path="/itin"
-                render={() => <ITINSection/>}
+                path="/es/itin"
+                render={() => <ITINSectionEs/>}
               />
               <Route
                 exact
-                path="/location"
-                render={() => <Location/>}
+                path="/es/localización"
+                render={() => <LocationEs/>}
               />
               <Route
                 exact
-                path="/location/about"
-                render={() => <About/>}
+                path="/es/localización/acerca"
+                render={() => <AboutEs/>}
               />
               <Route
                 exact
