@@ -295,6 +295,26 @@ export const TaxBannerTitle = styled.div`
     }
 `;
 
+export const TaxBannerTitleEs = styled.div`
+    font-size: 2vw;
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+    font-weight: 700;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 3vw;
+        margin-bottom: 2.5vh;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+`;
+
 export const TaxLowBannerMain = styled.div`
     height: 65vh;
     background: #fff;
@@ -362,6 +382,29 @@ export const LeftBadge = styled.div`
     justify-content: center;
     color: #fff;
     font-family: 'Changa One';
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        flex: none;
+        height: 5vh;
+        font-size: 5vw;
+    }
+`;
+
+export const LeftBadgeEs = styled.div`
+    flex: 1;
+    width: 40%;
+    background: #00274c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Changa One';
+
+    @media screen and (max-width: 1023px){
+        width: 50%;
+    }
 
     @media screen and (max-width: 600px){
         width: 100%;
@@ -589,6 +632,28 @@ export const InPersonMain = styled.div`
     }
 `;
 
+export const InPersonMainEs = styled.div`
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1023px){
+        height: auto;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 600px){
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10vh 0;s
+    }
+`;
+
 export const InPersonLeft = styled.div`
     flex-basis: 45%;
     display: flex;
@@ -647,6 +712,31 @@ export const InPersonRight = styled.div`
     }
 `;
 
+export const InPersonRightEs = styled.div`
+    height: auto;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    hr {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1023px){
+        height: auto;
+        margin: 5vh 0 0 0;
+    }
+
+    @media screen and (max-width: 600px){
+        flex-basis: 75%;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+`;
+
 export const InPersonBadge = styled.div`
     width: 30%;
     height: 5vh;
@@ -673,6 +763,36 @@ export const InPersonBadge = styled.div`
     }
 `;
 
+export const InPersonBadgeEs = styled.div`
+    width: 50%;
+    height: 5vh;
+    background: #5f5e5e;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 0.775vw;
+
+    @media screen and (max-width: 1023px){
+        width: 80%;
+        height: 3vh;
+        font-size: 1vw;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 8vh;
+        font-size: 4.5vw;
+        text-align: center;
+        margin: 5vh auto;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+`;
+
 export const InPersonTitle = styled.div`
     width: 80%;
     font-family: 'Roboto';
@@ -692,6 +812,25 @@ export const InPersonTitle = styled.div`
     }
 `;
 
+export const InPersonTitleEs = styled.div`
+    width: 80%;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2.50vw;
+    color: #0c0c0c;
+    margin: 0 0 2vh 0;
+
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        margin: 1vh 0 2vh 0;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: 8.5vw;
+        margin: 1vh auto 2vh auto;
+    }
+`;
+
 export const InPersonContent = styled.div`
     width: 90%;
     font-family: 'Roboto';
@@ -708,6 +847,26 @@ export const InPersonContent = styled.div`
     @media screen and (max-width: 600px){
         width: 100%;
         font-size: 5vw;
+    }
+`;
+
+export const InPersonContentEs = styled.div`
+    width: 90%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.25vw;
+    line-height: 30px;
+
+    @media screen and (max-width: 1023px){
+        width: 100%;
+        font-size: 2vw;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        font-size: 5vw;
+        margin: 1vh 0;
     }
 `;
 
@@ -767,7 +926,7 @@ export const WaysToFileLeft = styled.div`
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: auto;
 
     hr {
         width: 60%;
@@ -805,6 +964,32 @@ export const WaysToFileLeft = styled.div`
 
 export const WaysToFileBadge = styled.div`
     width: 40%;
+    height: 5vh;
+    background: #5f5e5e;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 0.775vw;
+
+    @media screen and (max-width: 1023px){
+        width: 50%;
+        height: 3vh;
+        font-size: 1vw;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 8vh;
+        font-size: 5.5vw;
+    }
+`;
+
+export const WaysToFileBadgeEs = styled.div`
+    width: 50%;
     height: 5vh;
     background: #5f5e5e;
     color: #fff;

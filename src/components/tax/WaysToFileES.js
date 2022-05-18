@@ -1,6 +1,6 @@
 import React from 'react';
 import CheckIcon from '@mui/icons-material/Check';
-import {WaysToFileContainer, WaysToFileLeft, WaysToFileRight, WaysToFileBadge, WaysToFileTitle,
+import {WaysToFileContainer, WaysToFileLeft, WaysToFileRight, WaysToFileBadgeEs, WaysToFileTitle,
     WaysToFileDesc, InPersonCheckList, WaysToFileNav, WaysToFileNavContent, WaysToFileNavName,
     WaysToFileNavIcon
 } from '../../styles/tax.styles';
@@ -9,9 +9,9 @@ const WaysToFileEs = ({navigations}) => {
     return (
         <WaysToFileContainer>
             <WaysToFileLeft>
-                <WaysToFileBadge>
+                <WaysToFileBadgeEs>
                     Más Formas de Presentar
-                </WaysToFileBadge>
+                </WaysToFileBadgeEs>
                 <hr/>
                 <WaysToFileTitle>
                     Otras formas de archivo diseñadas para satisfacer sus <span>necesidades</span>.

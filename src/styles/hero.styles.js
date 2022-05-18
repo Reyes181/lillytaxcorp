@@ -58,6 +58,31 @@ export const HeroListItem = styled.div`
     }
 `;
 
+export const HeroListItemEs = styled.div`
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 2vh auto;
+    font-size: 2vw;
+    line-height: 60px;
+    font-family: 'Roboto';
+    
+    div {
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        font-size: 3.5vw;
+        width: 60%;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 5vw;
+        width: 80%;
+    }
+`;
+
 export const HeroRightContainer = styled.div`
     flex-basis: 50%;
     height: 100%;
@@ -133,7 +158,7 @@ export const BannerContainer = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        height: 80vh;
+        height: 70vh;
         background-position: right !important;
     }
 
@@ -301,13 +326,13 @@ export const SliderTitle = styled.div`
     text-transform: Capitalize;
 
     @media screen and (max-width: 1023px) {
-        font-size: 5vw;
-        margin: 3vh 0 !important;
+        font-size: 3.5vw;
+        margin: 1vh 0 !important;
         text-align: left;
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 `;
 
@@ -321,6 +346,7 @@ export const SliderDesc = styled.div`
         width: 100%;
         text-align: left;
         font-size: 2vw;
+        margin: 2vh 0 !important;
     }
 
     @media screen and (max-width: 600px) {
@@ -347,7 +373,7 @@ export const SliderBadge =  styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 9vw;
+        font-size: 5vw;
     }
 `;
 
@@ -373,8 +399,8 @@ export const SliderButton = styled(Link)`
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 8vw;
-        height: 8vh;
+        font-size: 6vw;
+        height: 6vh;
     }
 `;
 

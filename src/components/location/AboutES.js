@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useLocation } from "react-router";
-import Banner from '../hero/Banner';
+import BannerEs from '../hero/BannerES';
 import InfoIcon from '@mui/icons-material/Info';
 import LillySelf from '../../resources/images/lilly.JPG';
 import LillyGroup from '../../resources/images/lillygroup.JPG';
@@ -68,7 +68,7 @@ const AboutEs = () => {
                 </AboutSubDesc>
             </AboutSubContainer>
 
-            <Banner/>
+            <BannerEs/>
         </LocationContainer>
     );
 };

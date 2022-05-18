@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useLocation } from "react-router";
-import {HeroContainer, HeroLeftContainer, HeroRightContainer, HeroImgBox, HeroListItem} from '../../styles/hero.styles';
+import {HeroContainer, HeroLeftContainer, HeroRightContainer, HeroImgBox, HeroListItemEs} from '../../styles/hero.styles';
 import HeroImg from '../../resources/images/Hero_Img.png';
 import BannerEs from './BannerES';
 import MobileSliderEs from './MobileSliderES';
@@ -19,18 +19,18 @@ const HeroEs = () => {
         <>
             <HeroContainer>
                 <HeroLeftContainer>
-                    <HeroListItem>
+                    <HeroListItemEs>
                         <CheckCircleOutlineIcon sx={{ fontSize: 60 }}/>
                         <div>Aplicaciones de ITIN</div>
-                    </HeroListItem>
-                    <HeroListItem>
+                    </HeroListItemEs>
+                    <HeroListItemEs>
                         <CheckCircleOutlineIcon sx={{ fontSize: 60 }}/>
                         <div>Renovaciones de ITIN</div>
-                    </HeroListItem>
-                    <HeroListItem>
+                    </HeroListItemEs>
+                    <HeroListItemEs>
                         <CheckCircleOutlineIcon sx={{ fontSize: 60 }}/>
                         <div>Preparacion de Impuestos</div>
-                    </HeroListItem>
+                    </HeroListItemEs>
                 </HeroLeftContainer>
                 <HeroRightContainer>
                     <HeroImgBox src={HeroImg} alt='Lilly'/>

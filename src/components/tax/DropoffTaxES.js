@@ -8,7 +8,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import StoreIcon from '@mui/icons-material/Store';
 import FolderIcon from '@mui/icons-material/Folder';
 import DropOffImg from '../../resources/images/kelly-sikkema-unsplash.jpg';
-import {InPersonContainer, InPersonMain, InPersonLeft, InPersonRight, InPersonBadge, InPersonTitle, InPersonContent,
+import {InPersonContainer, InPersonMainEs, InPersonLeft, InPersonRightEs, InPersonBadgeEs, InPersonTitleEs, InPersonContentEs,
     InPersonCheckList
 } from '../../styles/tax.styles';
 
@@ -39,27 +39,27 @@ const DropoffTaxEs = () => {
             <ReUsableBanner
                 icon={<FolderIcon/>}
                 title={'Declaración "Drop-Off"'}
-                desc={'¿No hay tiempo para esperar? Reúna todos sus documentos fiscales y déjelos en nuestra oficina. Si tenemos alguna pregunta o necesitamos información adicional, nos pondremos en contacto con usted por teléfono o correo electrónico.'}
+                desc={'Reúna todos sus documentos fiscales y déjelos en nuestra oficina. Si tenemos alguna pregunta o necesitamos información adicional, nos pondremos en contacto con usted por teléfono o correo electrónico.'}
             />
-            <InPersonMain>
+            <InPersonMainEs>
                 <InPersonLeft>
                     <img src={DropOffImg} alt='Virtual'/>
                 </InPersonLeft>
-                <InPersonRight>
-                    <InPersonBadge>Deje sus Documentos</InPersonBadge>
+                <InPersonRightEs>
+                    <InPersonBadgeEs>Deje sus Documentos</InPersonBadgeEs>
                     <hr/>
-                    <InPersonTitle>
+                    <InPersonTitleEs>
                         Sin citas y sin tiempo de espera, encargamos de su declaración de impuestos.
-                    </InPersonTitle>
+                    </InPersonTitleEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Con esta opción nuestros clientes pueden optar por dejar todos sus documentos fiscales en nuestra oficina sin necesidad de concertar cita previa.
                         o esperar a que el preparador esté disponible.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Una vez que recibamos sus documentos, trabajaremos en su declaración de impuestos y una vez que todo esté listo, nos pondremos en contacto con usted para que pueda revisarla y aprobarla.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
                     <InPersonCheckList>
                         <li>
@@ -79,8 +79,8 @@ const DropoffTaxEs = () => {
                             Sin Esfuerzo Alguno
                         </li>
                     </InPersonCheckList>
-                </InPersonRight>
-            </InPersonMain>
+                </InPersonRightEs>
+            </InPersonMainEs>
 
             <WaysToFileEs
                 navigations={navList}

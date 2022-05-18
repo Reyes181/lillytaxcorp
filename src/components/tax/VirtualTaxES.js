@@ -8,7 +8,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import StoreIcon from '@mui/icons-material/Store';
 import FolderIcon from '@mui/icons-material/Folder';
 import VirtualImg from '../../resources/images/kaitlyn-baker-unsplash.jpg';
-import {InPersonContainer, InPersonMain, InPersonLeft, InPersonRight, InPersonBadge, InPersonTitle, InPersonContent,
+import {InPersonContainer, InPersonMainEs, InPersonLeft, InPersonRightEs, InPersonBadgeEs, InPersonTitleEs, InPersonContentEs,
     InPersonCheckList
 } from '../../styles/tax.styles';
 
@@ -39,25 +39,25 @@ const VirtualTaxEs = () => {
                 title={'Declaración Virtual'}
                 desc={'Cargue su información y documentos de texto a nuestro WhatsApp o envíelos a nuestra dirección de correo electrónico segura. Todo desde la comodidad de su hogar.'}
             />
-            <InPersonMain>
+            <InPersonMainEs>
                 <InPersonLeft>
                     <img src={VirtualImg} alt='Virtual'/>
                 </InPersonLeft>
-                <InPersonRight>
-                    <InPersonBadge>Presentación de Sus Impuestos Virtualmente</InPersonBadge>
+                <InPersonRightEs>
+                    <InPersonBadgeEs>Presentación de Sus Impuestos Virtualmente</InPersonBadgeEs>
                     <hr/>
-                    <InPersonTitle>
+                    <InPersonTitleEs>
                         Presenta tus impuestos con nuestra opción virtual.
-                    </InPersonTitle>
+                    </InPersonTitleEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Presentar sus impuestos ahora es fácil. Queremos hacer la vida de nuestros clientes más fácil y el proceso de preparación de sus impuestos sin esfuerzo. Cuando elige declarar sus impuestos con nuestro
                         opción virtual puedes subir tus documentos a nuestro WhatsApp o correo electrónico, revisar y firmar tu declaración de impuestos, pagar y obtener una copia de tu declaración sin salir de casa.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Incluso si no viene a su oficina, obtendrá los mismos resultados y nos encargaremos de su declaración de impuestos de la misma manera que si lo hiciera.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
                     <InPersonCheckList>
                         <li>
@@ -77,8 +77,8 @@ const VirtualTaxEs = () => {
                             Sigue el estado de tu devolución desde tu teléfono
                         </li>
                     </InPersonCheckList>
-                </InPersonRight>
-            </InPersonMain>
+                </InPersonRightEs>
+            </InPersonMainEs>
 
             <WaysToFileEs
                 navigations={navList}

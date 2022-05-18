@@ -45,12 +45,12 @@ const HeaderEs = ({drawerToggleHandler, getLanguageChangeStart}) => {
                             </HeaderNav>
 
                             <HeaderLanguage>
-                                <a href='/' onClick={() => getLanguageChangeStart(true)} style={{opacity: '0.5'}}>
+                                <span onClick={() => getLanguageChangeStart(true)} style={{opacity: '0.5'}}>
                                     <img src={EnglishFlag} alt='English'/>
-                                </a>
-                                <a href='/' onClick={() => getLanguageChangeStart(false)}>
+                                </span>
+                                <span onClick={() => getLanguageChangeStart(false)}>
                                     <img src={SpanishFlag} alt='Spanish'/>
-                                </a>
+                                </span>
                             </HeaderLanguage>
                             <MobileBurger>
                                 <MenuIcon sx={{ fontSize: 20 }} onClick={drawerToggleHandler}/>

@@ -8,7 +8,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
 import FolderIcon from '@mui/icons-material/Folder';
 import OfficeImg from '../../resources/images/scott-graham-unsplash.jpg';
-import {InPersonContainer, InPersonMain, InPersonLeft, InPersonRight, InPersonBadge, InPersonTitle, InPersonContent,
+import {InPersonContainer, InPersonMainEs, InPersonLeft, InPersonRight, InPersonBadgeEs, InPersonTitleEs, InPersonContentEs,
     InPersonCheckList
 } from '../../styles/tax.styles';
 
@@ -41,26 +41,26 @@ const InPersonTaxEs = () => {
                 title={'Declaración En Persona'}
                 desc={'Presente sus impuestos directamente en nuestras oficinas. Haga cualquier pregunta que tenga y trabaje junto con nuestros expertos preparadores de impuestos para obtener el mejor reembolso posible.'}
             />
-            <InPersonMain>
+            <InPersonMainEs>
                 <InPersonLeft>
                     <img src={OfficeImg} alt='Office'/>
                 </InPersonLeft>
                 <InPersonRight>
-                    <InPersonBadge>Presentación con un preparador de impuestos</InPersonBadge>
+                    <InPersonBadgeEs>Presentación con un preparador de impuestos</InPersonBadgeEs>
                     <hr/>
-                    <InPersonTitle>
+                    <InPersonTitleEs>
                         Presentación con un preparador de impuestos.
-                    </InPersonTitle>
+                    </InPersonTitleEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Nuestro equipo tiene el conocimiento y la experiencia necesaria cuando se trata de preparación de impuestos. Cuando vengas a nuestra oficina puedes
                         cuente con nosotros para obtener el mejor reembolso posible según su situación.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
-                    <InPersonContent>
+                    <InPersonContentEs>
                         Reciba asesoramiento profesional y haga las preguntas que tenga cuando se registre con nosotros. Nos encargaremos de su declaración de impuestos y
                         luego le explicaremos sus números cuando todo esté listo.
-                    </InPersonContent>
+                    </InPersonContentEs>
 
                     <InPersonCheckList>
                         <li>
@@ -81,7 +81,7 @@ const InPersonTaxEs = () => {
                         </li>
                     </InPersonCheckList>
                 </InPersonRight>
-            </InPersonMain>
+            </InPersonMainEs>
 
             <WaysToFileEs
                 navigations={navList}

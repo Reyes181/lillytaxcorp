@@ -99,6 +99,26 @@ export const FooterLogo = styled.div`
     }
 `;
 
+export const FooterLogoEs = styled.div`
+    font-family: 'Nauman' !important;
+    font-size: 2vw;
+    color: #F1F4F6 !important;
+    word-spacing: -5px;
+    line-height: none;
+
+    @media screen and (max-width: 1023px) {
+        flex-basis: 15% !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        font-size: 8vw;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+    }
+`;
+
 export const FooterCopyRight = styled.div`
     width: 80%;
     flex: 2;

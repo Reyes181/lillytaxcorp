@@ -95,6 +95,7 @@ export const HeaderLanguage = styled.div`
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0px 0px 0px;
+    cursor: pointer;
 
     @media screen and (max-width: 600px) {
         display: none

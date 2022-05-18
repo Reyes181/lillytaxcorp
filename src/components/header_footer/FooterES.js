@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterContainer, FooterCopyRight, FooterContent, FooterLogo, FooterBottom } from '../../styles/footer.styles';
+import { FooterContainer, FooterCopyRight, FooterContent, FooterLogoEs, FooterBottom } from '../../styles/footer.styles';
 
 const FooterEs = () => {
     return (
         <FooterContainer>
             <FooterContent>
-                <FooterLogo>LILLY TAX</FooterLogo>
+                <FooterLogoEs>LILLY TAX</FooterLogoEs>
                 <div>
                     <span>Servicios de Impuestos</span>
                     <ul>
