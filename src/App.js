@@ -29,24 +29,13 @@ const DocumentCheckListEs = lazy(() => import('./components/tax/DocumentCheckLis
 
 
 const App = ({languageChange}) => {
-  // const [isEnglish, setIsEnglish] = useState(true);
 
   useEffect(() => {
     window.onbeforeunload = () => {
       window.sessionStorage.setItem('lastRoute', JSON.stringify(window.location.pathname))
     }
-    console.log(window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', ''))
   }, [])
 
-
-  // const handleLanguageChange = (language) => {
-  //   if(language === 'english'){
-  //     return setIsEnglish(true)
-  //   }
-  //   if(language === 'spanish'){
-  //     return setIsEnglish(false)
-  //   }
-  // }
     return (
       <div className="App">
         {languageChange ? 
