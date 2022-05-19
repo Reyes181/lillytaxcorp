@@ -37,7 +37,7 @@ const TaxMainEs = () => {
             </TaxFileContainer>
 
             <TaxCardContainer>
-                <TaxCard to={'/es/impuestos/declaración-en-persona'}>
+                <TaxCard to={'/es/impuestos/declaracion-en-persona'}>
                     <TaxIcon>
                         <StoreIcon  sx={{ fontSize: 80 }}/>
                     </TaxIcon>
@@ -50,7 +50,7 @@ const TaxMainEs = () => {
                     </TaxCardDesc>
                 </TaxCard>
 
-                <TaxCard to={'/es/impuestos/declaración-drop-off'}>
+                <TaxCard to={'/es/impuestos/declaracion-drop-off'}>
                     <TaxIcon>
                         <FolderIcon sx={{ fontSize: 80 }}/>
                     </TaxIcon>
@@ -62,7 +62,7 @@ const TaxMainEs = () => {
                     </TaxCardDesc>
                 </TaxCard>
 
-                <TaxCard to={'/es/impuestos/declaración-virtual'}>
+                <TaxCard to={'/es/impuestos/declaracion-virtual'}>
                     <TaxIcon>
                         <ImportantDevicesIcon sx={{ fontSize: 80 }}/>
                     </TaxIcon>

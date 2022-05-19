@@ -11,9 +11,8 @@ const languageReducer = (state = INITIAL_STATE, action) => {
         
         case LanguageActionTypes.LANG_CHANGE_START:
             return {
-                isEnglish: action.payload,
-                isLoading: false,
-                error: null
+                ...state,
+                isEnglish: action.payload
             };
         case LanguageActionTypes.LANG_CHANGE_ERROR:
             return {

@@ -25,12 +25,12 @@ const DropoffTaxEs = () => {
     const navList = [
         {
             name: 'Declaración En Persona',
-            link: '/es/impuestos/declaración-en-persona',
+            link: '/es/impuestos/declaracion-en-persona',
             icon: <StoreIcon/>
         },
         {
             name: 'Declaración Virtual',
-            link: '/es/impuestos/declaración-virtual',
+            link: '/es/impuestos/declaracion-virtual',
             icon: <ImportantDevicesIcon/>
         }
     ]

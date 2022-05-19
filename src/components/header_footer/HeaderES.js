@@ -39,7 +39,7 @@ const HeaderEs = ({drawerToggleHandler, getLanguageChangeStart}) => {
                                 <NavLink to={{pathname: '/es/itin'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     ITIN
                                 </NavLink>
-                                <NavLink to={{pathname: '/es/localización'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                                <NavLink to={{pathname: '/es/localizacion'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                                     Localización
                                 </NavLink>
                             </HeaderNav>

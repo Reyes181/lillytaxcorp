@@ -6,7 +6,7 @@ export const TaxMainContainer = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
-    margin: 5vh auto;
+    background: #fff;
 `;
 
 export const TaxFileContainer = styled.div`
@@ -178,11 +178,11 @@ export const TaxCard = styled(Link)`
     align-items: center;
     padding: 30px 0px;
     background: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     }
 
     @media screen and (max-width: 1023px){
@@ -231,6 +231,8 @@ export const TaxCardDesc = styled.div`
     font-size: 0.9vw;
     display: flex;
     align-items: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
 
     @media screen and (max-width: 1023px){
         font-size: 1.25vw;
@@ -317,7 +319,6 @@ export const TaxBannerTitleEs = styled.div`
 
 export const TaxLowBannerMain = styled.div`
     height: 65vh;
-    background: #fff;
     width: 100%;
     display: flex;
     justify-content: center;

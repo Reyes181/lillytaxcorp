@@ -11,9 +11,9 @@ const FooterEs = () => {
                     <span>Servicios de Impuestos</span>
                     <ul>
                         <li><Link to='/es/impuestos/lista-de-documentos'>Lista de Documentos</Link></li>
-                        <li><Link to='/es/impuestos/declaración-en-persona'>Declaración En Persona</Link></li>
-                        <li><Link to='/es/impuestos/declaración-drop-off'>Declaración "Drop-Off"</Link></li>
-                        <li><Link to='/es/impuestos/declaración-virtual'>Declaración Virtual</Link></li>
+                        <li><Link to='/es/impuestos/declaracion-en-persona'>Declaración En Persona</Link></li>
+                        <li><Link to='/es/impuestos/declaracion-drop-off'>Declaración "Drop-Off"</Link></li>
+                        <li><Link to='/es/impuestos/declaracion-virtual'>Declaración Virtual</Link></li>
                     </ul>
                 </div>
                 <div>
@@ -27,9 +27,9 @@ const FooterEs = () => {
                 <div>
                     <span>Acerca de</span>
                     <ul>
-                        <li><Link to='/es/localización'>Contacta Con Cosotros</Link></li>
-                        <li><Link to='/es/localización'>Localización</Link></li>
-                        <li><Link to='/es/localización/acerca'>Acerca de Lilly Tax</Link></li>
+                        <li><Link to='/es/localizacion'>Contacta Con Cosotros</Link></li>
+                        <li><Link to='/es/localizacion'>Localización</Link></li>
+                        <li><Link to='/es/localizacion/acerca'>Acerca de Lilly Tax</Link></li>
                     </ul>
                 </div>
             </FooterContent>

@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from 'react';
+import React, {lazy, Suspense, useEffect} from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
@@ -31,9 +31,12 @@ const DocumentCheckListEs = lazy(() => import('./components/tax/DocumentCheckLis
 const App = ({languageChange}) => {
   // const [isEnglish, setIsEnglish] = useState(true);
 
-  // useEffect(() => {
-
-  // })
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      window.sessionStorage.setItem('lastRoute', JSON.stringify(window.location.pathname))
+    }
+    console.log(window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', ''))
+  }, [])
 
 
   // const handleLanguageChange = (language) => {
@@ -98,7 +101,14 @@ const App = ({languageChange}) => {
               <Route
                 exact
                 path="/*"
-                render={() => <Redirect to='/'/>}
+                render={() => 
+                  {
+                    if(window.sessionStorage.getItem('lastRoute').includes("es")){
+                      return <Redirect to={"/"}/>
+                    }
+                    return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
+                  }
+                }
               />
             </Suspense>
           </Switch>
@@ -119,17 +129,17 @@ const App = ({languageChange}) => {
               />
               <Route
                 exact
-                path="/es/impuestos/declaración-en-persona"
+                path="/es/impuestos/declaracion-en-persona"
                 render={() => <InPersonTaxEs/>}
               />
               <Route
                 exact
-                path="/es/impuestos/declaración-virtual"
+                path="/es/impuestos/declaracion-virtual"
                 render={() => <VirtualTaxEs/>}
               />
               <Route
                 exact
-                path="/es/impuestos/declaración-drop-off"
+                path="/es/impuestos/declaracion-drop-off"
                 render={() => <DropoffTaxEs/>}
               />
               <Route
@@ -144,18 +154,25 @@ const App = ({languageChange}) => {
               />
               <Route
                 exact
-                path="/es/localización"
+                path="/es/localizacion"
                 render={() => <LocationEs/>}
               />
               <Route
                 exact
-                path="/es/localización/acerca"
+                path="/es/localizacion/acerca"
                 render={() => <AboutEs/>}
               />
               <Route
                 exact
                 path="/*"
-                render={() => <Redirect to='/'/>}
+                render={() => 
+                  {
+                    if(window.sessionStorage.getItem('lastRoute').includes("es")){
+                      return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
+                    }
+                    return <Redirect to={"/"}/>
+                  }
+                }
               />
             </Suspense>
           </Switch>

@@ -10,7 +10,7 @@ const BannerEs = () => {
                 <div>¿Alguna pregunta? Póngase en contacto con nosotros.</div>
                 <BannerHeader>Estamos aqui para ayudar</BannerHeader>
 
-                <BannerButton to={'/es/localización'}>
+                <BannerButton to={'/es/localizacion'}>
                     Contacto
                 </BannerButton>
             </BannerContent>

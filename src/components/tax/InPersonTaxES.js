@@ -23,12 +23,12 @@ const InPersonTaxEs = () => {
     const navList = [
         {
             name: 'Declaración Virtual',
-            link: '/es/impuestos/declaración-virtual',
+            link: '/es/impuestos/declaracion-virtual',
             icon: <ImportantDevicesIcon/>
         },
         {
             name: 'Declaración "Drop-Off"',
-            link: '/es/impuestos/declaración-drop-off',
+            link: '/es/impuestos/declaracion-drop-off',
             icon: <FolderIcon/>
         }
     ]

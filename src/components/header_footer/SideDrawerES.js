@@ -47,7 +47,7 @@ const SideDrawerEs = ({getLanguageChangeStart, ...props}) => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={{pathname: '/es/localización'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
+                        <NavLink to={{pathname: '/es/localizacion'}} activeStyle={{fontWeight: "bold", color: "#ffcb05"}}>
                             Localización
                         </NavLink>
                     </li>
