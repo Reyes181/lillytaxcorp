@@ -92,10 +92,15 @@ const App = ({languageChange}) => {
                 path="/*"
                 render={() => 
                   {
-                    if(window.sessionStorage.getItem('lastRoute').includes("es")){
-                      return <Redirect to={"/"}/>
+                    if(window.sessionStorage.getItem('lastRoute')){
+                       if(window.sessionStorage.getItem('lastRoute').includes("es")){
+                          return <Redirect to={"/"}/>
+                       }
+                       if(window.sessionStorage.getItem('lastRoute') !== null){
+                        return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
+                       }
+                      
                     }
-                    return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
                   }
                 }
               />
@@ -156,8 +161,10 @@ const App = ({languageChange}) => {
                 path="/*"
                 render={() => 
                   {
-                    if(window.sessionStorage.getItem('lastRoute').includes("es")){
-                      return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
+                    if(window.sessionStorage.getItem('lastRoute')){
+                      if(window.sessionStorage.getItem('lastRoute').includes("es") && window.sessionStorage.getItem('lastRoute') !== null){
+                        return <Redirect to={`/${window.sessionStorage.getItem('lastRoute').replace(/"/g, '').replace('/', '')}`}/>
+                      }
                     }
                     return <Redirect to={"/"}/>
                   }

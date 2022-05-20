@@ -91,7 +91,7 @@ const ITINSectionEs = () => {
                         <div>
                             ¿Tiene alguna pregunta sobre impuestos o ITIN?
                         </div>
-                        <ITINHelpButton to={'/location'}>
+                        <ITINHelpButton to={'/es/localizacion'}>
                             Contacta con nosotros
                         </ITINHelpButton>
                     </ITINHelp>

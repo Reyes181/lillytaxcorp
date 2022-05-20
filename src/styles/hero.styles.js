@@ -158,7 +158,7 @@ export const BannerContainer = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        height: 70vh;
+        height: 50vh;
         background-position: right !important;
     }
 
@@ -209,7 +209,7 @@ export const BannerHeader = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 12vw !important;
+        font-size: 8vw !important;
     }
 `;
 
@@ -238,8 +238,8 @@ export const BannerButton = styled(Link)`
 
     @media screen and (max-width: 600px) {
         width: 100%;
-        height: 8vh;
-        font-size: 8vw;
+        height: 6vh;
+        font-size: 6vw;
     }
 `;
 

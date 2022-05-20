@@ -1362,7 +1362,7 @@ export const DLPerosnalList = styled.div`
 
         li {
             margin: 2vh 0;
-            text-align: justify;
+            text-align: left;
         }
     }
 `;
